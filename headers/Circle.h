@@ -72,7 +72,7 @@ void Circle::getRadius(int& radius) const
 
 void Circle::getArea(double& area) const
 {
-    area = this->radius;
+    area = this->area;
 }
 
 void Circle::compute()
@@ -84,7 +84,7 @@ void Circle::printCircle() const
 {
     cout << fixed << showpoint;
     cout << setprecision(5);
-    cout << "radius=" << radius << ", area=" << endl;
+    cout << "radius=" << radius << ", area=" << area << endl;
 }
 
 bool Circle::equalCircle(const Circle& otherCircle) const
